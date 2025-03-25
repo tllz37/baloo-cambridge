@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subir Video e Imagen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            margin: auto;
+            max-width: 600px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Subir Video e Imagen</h1>
+
+        <h2>Video</h2>
+        <input type="file" accept="video/*">
+
+        <h2>Imagen</h2>
+        <input type="file" accept="image/*">
+
+        <div>
+            <button onclick="confirmarCita()">Confirmar Cita</button>
+            <button onclick="abrirMapa()">Abrir Mapa</button>
+        </div>
+    </div>
+
+    <script>
+        function confirmarCita() {
+            alert("¡Cita confirmada!");
+        }
+
+        function abrirMapa() {
+            window.open("https://www.google.com/maps", "_blank");
+        }
+    </script>
+</body>
+</html>
