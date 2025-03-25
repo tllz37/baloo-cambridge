@@ -38,7 +38,10 @@
 
     <script>
         function confirmarCita() {
-            alert("¡Cita confirmada!");
+            const telefono = "52XXXXXXXXXX"; // Reemplaza con el número de WhatsApp, incluyendo el código del país
+            const mensaje = "Hola, quiero confirmar una cita."; // Mensaje predeterminado
+            const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+            window.open(url, "_blank");
         }
 
         function abrirMapa() {
